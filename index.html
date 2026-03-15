@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KWA-NDUNA SHISANYAMA</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="images/jpeg" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">KWA NDUNA<span class="fire-text"> SHISANYAMA</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="icon.png" width="30%" height="20%"/>
+            <h1>CHOMI HAREYE HA <span class="fire-text">NDUNA!</span></h1>
+            <p>Visit the best lounge in Sasolburg.</p>
+            <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container layout-2-col">
+            <div class="about-text" data-aos="fade-right">
+                <h2 class="section-title">Where Smoke Meets <span class="fire-text">Soul</span></h2>
+                <p>Welcome to Kwa Nduna Shisanyama, the heart of flavour and vibe in Sasolburg! Step into
+                    a space where the fire never dies, the meat is always sizzling, and the atmosphere is
+                    alive with energy. Here, every plate is a celebration of tradition and taste, crafted
+                    to bring people together over good food, good music, and unforgettable moments. Whether
+                    you're here to unwind after a long day or to turn up with friends, Kwa Nduna is where
+                    the spirit of shisanyama truly comes alive.
+
+                </p>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="theview.jpeg">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding dark-bg">
+        <div class="container">
+            <h2 class="section-title text-center">Our <span class="fire-text">Offerings</span></h2>
+            
+            <div class="tab-container" data-aos="fade-up">
+                <button class="tab-btn active" onclick="openMenu(event, 'food')">Food Menu</button>
+                <button class="tab-btn" onclick="openMenu(event, 'alcohol')">Bar & Mixology</button>
+                <button class="tab-btn" onclick="openMenu(event, 'hubbly')">Hubbly</button>
+                <button class="tab-btn" onclick="openMenu(event, 'bottles')">VIP Bottle Service</button>
+            </div>
+
+            <div id="food" class="menu-content active" data-aos="fade-in">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Full Chicken</h3>
+                            <span class="price">R100</span>
+                        </div>
+                        <p>Bring the crew and feast on a full flame-grilled chicken—juicy, smoky, and made to share.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Steak</h3>
+                            <span class="price">R45 </span>
+                        </div>
+                        <p>Sink your teeth into a flame-grilled steak—tender, juicy, and bursting with smoky flavor that keeps you coming back for more!</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Salad</h3>
+                            <span class="price">R20</span>
+                        </div>
+                        <p>Fresh, crisp, and full of flavor—our garden salad is the perfect cool companion to your sizzling shisanyama feast!</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Pap</h3>
+                            <span class="price">R25</span>
+                        </div>
+                        <p>No meal is complete without our soft, hearty pap—perfectly paired with smoky meat and rich gravy for that true kasi flavor!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alcohol" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Blow Job</h3>
+                            <span class="price">R70</span>
+                        </div>
+                        <p>Sweet and tangy, a crowd-pleaser.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tequila Shot</h3>
+                            <span class="price">R40</span>
+                        </div>
+                        <p>Silver tequila, fresh lime, agave, infused with jalapeño. Tajin rim.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Neon Nights</h3>
+                            <span class="price">R70</span>
+                        </div>
+                        <p>Vodka, blue curacao, sour mix, and a splash of sprite. Glows in the dark.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>FLAMMING LAMBORGHINI</h3>
+                            <span class="price">R150</span>
+                        </div>
+                        <p>Vodka, triple sec, and lime juice—sharp and refreshing.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hubbly" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Egyptian</h3>
+                            <span class="price">R50</span>
+                        </div>
+                        <p>Rent a premium egyptian hubbly for an 1 kop.</p>
+                    </div>
+                    
+                 
+                 
+                </div>
+            </div>
+
+            <div id="bottles" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Hennessy VSOP</h3>
+                            <span class="price">R3 500</span>
+                        </div>
+                        <p>Includes VIP booth seating, sparkler presentation, and 3 mixers of choice.</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Don Julio 1942</h3>
+                            <span class="price">R28 000</span>
+                        </div>
+                        <p>Premium tequila experience. Includes VIP booth, fresh limes, and sparkler show.</p>
+                    </div>
+                    
+                 
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">The <span class="fire-text">Experience</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 1.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 2.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 3.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 4.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 5.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 6.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 7.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 8.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 9.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 10.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 11.jpeg" >
+                </div><div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="vibe 12.jpeg" >
+                </div>
+                    
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="section-padding dark-bg">
+        <div class="container">
+            <h2 class="section-title text-center">Upcoming <span class="fire-text">Events</span></h2>
+            <div class="events-container">
+                <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-date">
+                        <h3>13</h3>
+                        <span>MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h4>ULTRAMOG SESSIONS - Dance by the river activation</h4>
+                        <p>Feat: V UNDERGOURND | D.GENERAL | ZULU MAFIA | CITIZEN STHEE | MASTER MAHEVY | LES-EGO | SOUL-MO | JABZ | ZAP | GLEN | SBABA | RAMON | DOMINANT | SUGARLEX </p>
+                        <p<b>FREE ENTRANCE</b></p>
+                    </div>
+                </div>
+                
+                  <!-------Add another event-->
+
+                   <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-date">
+                        <h3>14</h3>
+                        <span>MAR</span>
+                    </div>
+                    <div class="event-details">
+                        <h4>BALLER'S LINK UP</h4>
+                        <p>Music by: ZULU TARIAN | LAUD | SPITJO | ACHAAR | SOUL MOO | LES EGOSCOVA | SLOVA | OOM KOOS | MALAZA | LEVAI | MBEX | BROWN SKIN | CHARMAINE ZA | STAR</p>
+                        <p>Host : MAX X CHOUPA | MANZANA | CHESETER | TUMELO | HANNS | PAPAS | JAY | AMBER AND PORTIA | LUNGA | DIVA | PORTIA | SHUSHA | MANANA</p>
+                        <p>MC: BINO BOY | MAKHWENKWE WASE VAAL | PHANDA</p>
+                        <p><b>FREE ENTRANCE</b></p>
+                    </div>
+                </div>
+               
+                 <!-------Add another event-->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container layout-2-col">
+            <div class="contact-form-container" data-aos="fade-right">
+                <h2 class="section-title">GIVE US A<span class="fire-text"> VISIT</span></h2><br/>
+                <p>4938 Somerspost St<br/> Zamdela<br/> Sasolburg<br/> 1949</p>
+               
+              
+            </div>
+            
+            <div class="map-container" data-aos="fade-left">
+                <iframe 
+                    src="https://maps.app.goo.gl/3Byjiw8PPk3ev4mN6"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>KWA NDUNA <span class="fire-text">SHISANYAMA</span></h2>
+                <p>Tlohong bakgotsi, monate o ha Nduna!</p>
+            </div>
+            <div class="footer-socials">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/KwaNdunaShisanyama/"><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-x"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Proudly designed by Lesedi Nkhethoa | 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
