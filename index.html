@@ -34,7 +34,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
             <img src="icon.png" width="30%" height="20%"/>
-            <h1>CHOMI HAREYE HA <span class="fire-text">NDUNA!</span></h1>
+            <h1>CHOMI HAREYE <span class="fire-text">@KNS!</span></h1>
             <p>Visit the best lounge in Sasolburg.</p>
             <a href="#menu" class="btn btn-primary">Explore Menu</a>
         </div>
@@ -54,7 +54,8 @@
                 </p>
             </div>
             <div class="about-image" data-aos="fade-left">
-                <img src="theview.jpeg">
+                <img id="about-image" src="theview.jpeg" alt="">
+
             </div>
         </div>
     </section>
@@ -73,6 +74,7 @@
                 <button class="tab-btn" onclick="openMenu(event, 'cognac')">Cognac</button>
                 <button class="tab-btn" onclick="openMenu(event, 'wine')">Wine</button>
                 <button class="tab-btn" onclick="openMenu(event, 'vodka')">Vodka</button>
+                <button class="tab-btn" onclick="openMenu(event, 'specials')">Specials</button>
             </div>
 
             <div id="food" class="menu-content active" data-aos="fade-in">
@@ -152,26 +154,42 @@
                         <p>Big taste, lean protein—turkey that wins hearts.</p>
                     </div>
 
+                     <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Skopo</h3>
+                            <span class="price">R50</span>
+                        </div>
+                        <p>Authentic South African taste, now easier to enjoy.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Tlhakwana Tsa Nku</h3>
+                            <span class="price">R8 (each)</span>
+                        </div>
+                        <p>Proudly South African taste, now easier to enjoy.</p>
+                    </div>
+
                         <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Brisket (per kg)</h3>
-                            <span class="price">R199.89</span>
+                            <h3>Brisket </h3>
+                            <span class="price"></span>
                         </div>
                         <p>Brisket so tender, it practically tells stories</p>
                     </div>
 
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Chuck (per kg)</h3>
-                            <span class="price">R199.89</span>
+                            <h3>Chuck </h3>
+                            <span class="price"></span>
                         </div>
                         <p>Prepared with care, seasoned with tradition—chuck that feels like home.</p>
                     </div>
 
                      <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Wors (per kg)</h3>
-                            <span class="price">R199.89</span>
+                            <h3>Wors </h3>
+                            <span class="price"></span>
                         </div>
                         <p>Juicy, smoky, and bursting with flavor—wors that completes every braai!</p>
                     </div>
@@ -179,16 +197,16 @@
 
                        <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Ox tounge (per kg)</h3>
-                            <span class="price">R229.89</span>
+                            <h3>Ox tounge</h3>
+                            <span class="price"></span>
                         </div>
                         <p>Delicate texture, bold taste—ox tongue done right.</p>
                     </div>
 
                         <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Tlhakwana (per kg)</h3>
-                            <span class="price">R78.89</span>
+                            <h3>Pork Trotters </h3>
+                            <span class="price"></span>
                         </div>
                         <p>Rich in flavor, rooted in culture—tlhakwana done right.</p>
                     </div>
@@ -210,7 +228,7 @@
                         <p>  Olmeca Tequila Silver   <font color="Red">   R25     </font></p>
                         <p> Olmeca Tequila Gold    <font color="Red">   R25    </font></p>
                         <p>  Johnnie Walker Black   <font color="Red">   R30    </font></p>
-                        <p> Jameson    <font color="Red">   R40     </font></p>
+                        <p> Jameson Select Reserve   <font color="Red">   R40     </font></p>
                         <p> Hennessy    <font color="Red">   R50    </font></p>
                     </div>
                    
@@ -252,7 +270,7 @@
 
                     <div class="menu-item">
                         <div class="menu-item-header">
-                            <h3>Premium</h3>
+                            <h3>Japanese</h3>
                             <span class="price">R100</span>
                         </div>
                         <p>Elevate your night—premium hubbly that sets the mood.</p>
@@ -754,7 +772,7 @@
                             <h3>REMY MARTIN</h3>
                             <span class="price"></span>
                         </div>
-                        <p>V.S <font color="red">   R990</font></p>
+                        <p>V.S <font color="red">   R1 010</font></p>
                         <p>V.S.O.P  <font color="red">   R1 600</font></p>
                         <p>1738  <font color="red">   R2 400</font></p>
                     </div>
@@ -833,6 +851,83 @@
             </div>
 
 
+            <div id="specials" class="menu-content">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Castle Lite (six pack)</h3>
+                            <span class="price">R120</span>
+                        </div>
+                        <p>Unlock refreshment for less – Castle Lite, now at a cooler price!</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Heineken (six pack)</h3>
+                            <span class="price">R140</span>
+                        </div>
+                        <p>Heineken refreshment, now within easier reach.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Stella (six pack)</h3>
+                            <span class="price">R140</span>
+                        </div>
+                        <p>Classic elegance, now more accessible – Stella Artois for less.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Flying Fish (six pack)</h3>
+                            <span class="price">R140</span>
+                        </div>
+                        <p>Sip the sunshine for less – Flying Fish now at a lighter price.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Savannah (six pack)</h3>
+                            <span class="price">R140</span>
+                        </div>
+                        <p>Crisp by nature, now lighter on your wallet – Savanna for less.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Brutal Ruby (six pack)</h3>
+                            <span class="price">R140</span>
+                        </div>
+                        <p>Sweet meets savage savings – Brutal Ruby now more affordable.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Sol (six pack)</h3>
+                            <span class="price">R160</span>
+                        </div>
+                        <p>Taste the spirit of Mexico, now at a brighter deal.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Corona (six pack)</h3>
+                            <span class="price">R160</span>
+                        </div>
+                        <p>Corona refreshment, easier on your wallet.</p>
+                    </div>
+
+                     <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Ice Tropez (six pack)</h3>
+                            <span class="price">R580</span>
+                        </div>
+                        <p>Taste the French Riviera vibe, now at a sweeter deal.</p>
+                    </div>
+
+                    </div>
+                </div>
+
 
 
         </div>
@@ -880,31 +975,19 @@
             <div class="events-container">
                 <div class="event-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="event-date">
-                        <h3>13</h3>
-                        <span>MAR</span>
+                        <h3><!---date----></h3>
+                        <span><!----month---></span>
                     </div>
                     <div class="event-details">
-                        <h4>ULTRAMOG SESSIONS - Dance by the river activation</h4>
-                        <p>Feat: V UNDERGOURND | D.GENERAL | ZULU MAFIA | CITIZEN STHEE | MASTER MAHEVY | LES-EGO | SOUL-MO | JABZ | ZAP | GLEN | SBABA | RAMON | DOMINANT | SUGARLEX </p>
-                        <p<b>FREE ENTRANCE</b></p>
+                        <h4>EVENTS COMING SOON...</h4>
                     </div>
                 </div>
                 
                   <!-------Add another event-->
 
-                   <div class="event-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="event-date">
-                        <h3>14</h3>
-                        <span>MAR</span>
-                    </div>
-                    <div class="event-details">
-                        <h4>BALLER'S LINK UP</h4>
-                        <p>Music by: ZULU TARIAN | LAUD | SPITJO | ACHAAR | SOUL MOO | LES EGOSCOVA | SLOVA | OOM KOOS | MALAZA | LEVAI | MBEX | BROWN SKIN | CHARMAINE ZA | STAR</p>
-                        <p>Host : MAX X CHOUPA | MANZANA | CHESETER | TUMELO | HANNS | PAPAS | JAY | AMBER AND PORTIA | LUNGA | DIVA | PORTIA | SHUSHA | MANANA</p>
-                        <p>MC: BINO BOY | MAKHWENKWE WASE VAAL | PHANDA</p>
-                        <p><b>FREE ENTRANCE</b></p>
-                    </div>
-                </div>
+                  
+                   
+            
                
                  <!-------Add another event-->
                     
@@ -933,10 +1016,10 @@
                 <p>Tlohong bakgotsi, monate o ha Nduna!</p>
             </div>
             <div class="footer-socials">
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/kwa_nduna_shisanyama_official?igsh=MTBkdTRiOGV5cm14YQ=="><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@kwandunashisanyama?_r=1&_t=ZS-94jl5uFb45v"><i class="fab fa-tiktok"></i></a>
                 <a href="https://www.facebook.com/KwaNdunaShisanyama/"><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-x"></i></a>
+                
             </div>
         </div>
         <div class="footer-bottom">
