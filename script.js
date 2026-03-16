@@ -71,3 +71,16 @@ function openMenu(evt, menuCategory) {
     // Refresh AOS triggers since DOM layout changes
     AOS.refresh();
 }
+
+// Array of images
+    const images = ["theview.jpeg", "nightview.jpeg"];
+    let index = 0;
+
+    // Function to change image
+    function changeImage() {
+      index = (index + 1) % images.length; // alternate between 0 and 1
+      document.getElementById("about-image").src = images[index];
+    }
+
+    // Change every 2 seconds (2000 ms)
+    setInterval(changeImage, 2000);
